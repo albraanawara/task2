@@ -25,12 +25,12 @@ function stopAudio() {
 }
 const tracks = [
   {
-    src: "free-piano-loop.mp3",
+    src: "https://raw.githubusercontent.com/albraanawara/task2/main/free-piano-loop.mp3",
     title: "Song One",
     artist: "Unknown Artist"
   },
   {
-    src: "komorebi.mp3",
+    src: "https://raw.githubusercontent.com/albraanawara/task2/main/komorebi.mp3",
     title: "Song Two",
     artist: "Anitek"
   }
