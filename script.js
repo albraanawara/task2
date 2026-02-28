@@ -5,7 +5,8 @@ const progress = document.getElementById("progress");
 const bar = document.getElementById("progress-bar");
 const currentTimeEl = document.getElementById("current-time");
 const durationEl = document.getElementById("duration");
-
+const trackTitle = document.getElementById("track-title");
+const trackArtist = document.getElementById("track-artist");
 function togglePlay() {
   if (audio.paused) {
     audio.play();
@@ -24,13 +25,15 @@ function stopAudio() {
 }
 const tracks = [
   {
-    src: "Free piano loop 197 120 bpm.mp3",
-    title: "Song One"
+    src: "/Free piano loop 197 120 bpm.mp3",
+    title: "Song One",
+    artist: "Unknown Artist"
   },
   {
-    src: "Anitek_-_Komorebi.mp3",
-    title: "Song Two"
-  },
+    src: "/Anitek_-_Komorebi.mp3",
+    title: "Song Two",
+    artist: "Anitek"
+  }
 ];
 
 let currentTrack = 0;
@@ -43,6 +46,9 @@ function formatTime(time) {
 }
 function loadTrack(index) {
   audio.src = tracks[index].src;
+  trackTitle.innerText = tracks[index].title;
+  trackArtist.innerText = tracks[index].artist;
+
   audio.load();
   audio.play();
 
@@ -50,7 +56,6 @@ function loadTrack(index) {
   bar.style.width = "0%";
   currentTimeEl.innerText = "0:00";
 }
-
 
 audio.addEventListener("timeupdate", () => {
   if (!audio.duration) return;
@@ -98,5 +103,5 @@ function nextTrack() {
     currentTrack = 0; 
   }
 
-  loadTrack(currentTrack);
+ loadTrack(currentTrack);
 }
