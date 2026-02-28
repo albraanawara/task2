@@ -25,12 +25,12 @@ function stopAudio() {
 }
 const tracks = [
   {
-    src: "/Free piano loop 197 120 bpm.mp3",
+    src: "free-piano-loop.mp3",
     title: "Song One",
     artist: "Unknown Artist"
   },
   {
-    src: "/Anitek_-_Komorebi.mp3",
+    src: "komorebi.mp3",
     title: "Song Two",
     artist: "Anitek"
   }
