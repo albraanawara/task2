@@ -7,7 +7,8 @@ This project demonstrates working with the **HTML5 Audio API**, DOM manipulation
 
 ## 🌐 Live Demo
 
-[View Website]((https://albraanawara.github.io/task2/))
+[View Website]([https://albraanawara.github.io/task2/])
+
 
 ## 📁 Project Structure
 
